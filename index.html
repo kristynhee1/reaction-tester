@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#10151d">
+  <title>Lights Out! — Reaction Tester</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-phase="ready">
+  <main class="page-shell">
+    <header class="intro">
+      <p class="eyebrow">THE STARTING GRID</p>
+      <h1>Lights Out<span>!</span></h1>
+      <p class="lede">Five lights. One launch. Click as soon as they go out.</p>
+    </header>
+
+    <section class="race-card" aria-label="Reaction time game">
+      <div class="track-label"><span>RACE CONTROL</span><span id="attempt-label">ATTEMPT 01</span></div>
+      <div class="light-rack" id="lights" role="img" aria-label="Five red starting lights">
+        <span class="light"></span><span class="light"></span><span class="light"></span>
+        <span class="light"></span><span class="light"></span>
+      </div>
+      <p class="message" id="message" role="status" aria-live="polite">Ready when you are. Press Start Race.</p>
+      <div class="buttons">
+        <button class="button button-start" id="start-button" type="button">Start Race</button>
+        <button class="button button-react" id="react-button" type="button" disabled>Click to launch!</button>
+      </div>
+
+      <section class="results" id="results" hidden aria-live="polite">
+        <p class="result-label">YOUR REACTION</p>
+        <p class="time" id="time">—</p>
+        <h2 id="rank"></h2>
+        <div class="odds-card">
+          <span class="odds-label">ARCADE RACE ODDS</span>
+          <strong id="odds">—</strong>
+          <p id="odds-note">Just for fun, against a fictional 250 ms rival.</p>
+        </div>
+        <button class="button button-again" id="again-button" type="button">Race Again</button>
+      </section>
+    </section>
+
+    <footer>
+      <p>Wait for all five lights to go out. Click early and it’s a false start.</p>
+      <p>Race odds are a playful estimate, not a real prediction.</p>
+    </footer>
+  </main>
+</body>
+</html>
