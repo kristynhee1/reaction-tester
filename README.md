@@ -9,14 +9,14 @@ When the five F1-style starting lights go out, the player clicks as quickly as p
 1. Select Start Race.
 2. Watch the five red lights come on.
 3. Click the green launch button as soon as the lights go out. An early click is a false start.
-4. Read your time, rank, and playful race odds. Select Race Again to try another lap.
+4. Read your time, rank, and playful race odds.
+5. Select Race Again to try another lap.
 
 ## AI tool and selected prompts
 
 AI tool: OpenAI Codex.
 
 Prompt idea: “When the screen turns green, the person clicks as fast as possible, and it shows their time and a silly rank, Caffeinated Cheetah.”
-
 The follow-up idea was an F1-style start with five lights and a playful possibility of winning the race.
 
 
