@@ -11,22 +11,16 @@ When the five F1-style starting lights go out, the player clicks as quickly as p
 3. Click the green launch button as soon as the lights go out. An early click is a false start.
 4. Read your time, rank, and playful race odds. Select Race Again to try another lap.
 
-## How to open
-
-Open index.html in a modern browser. The project uses HTML, CSS, and JavaScript and needs no build step. An internet connection loads optional display fonts; system fonts are used if those fonts are unavailable.
-
 ## AI tool and selected prompts
 
 AI tool: OpenAI Codex.
 
-Prompt idea: “When the screen turns green, the person clicks as fast as possible, and it shows their time and a silly rank, Caffeinated Cheetah.” The follow-up idea was an F1-style start with five lights and a playful possibility of winning the race.
+Prompt idea: “When the screen turns green, the person clicks as fast as possible, and it shows their time and a silly rank, Caffeinated Cheetah.”
 
-Codex helped turn the idea into a staged countdown, false-start behavior, a millisecond result, silly ranks, and an arcade-style estimate against a fictional 250 ms rival. The odds are for fun and are not based on real racing data.
+The follow-up idea was an F1-style start with five lights and a playful possibility of winning the race.
 
-## Testing notes
-
-The JavaScript syntax check passed during development. Browser interaction testing is still needed. Try a normal reaction, click early while the red lights are on, and select Race Again. Record what you expected, what happened, and any change you made.
 
 ## Reflection
+My idea was a reaction tester. The game matched my intention: a countdown runs, a button appears, and the player's reaction speed is measured. To test it, I played several rounds myself and had a friend try it too. Overall, it worked the way I imagined.
 
-After testing, write 1–2 paragraphs in your own words. Explain what matched your intention, what you tested or changed and why, how Codex helped, what you decided or needed to understand, and what remains uncertain. Include specific observations from your playthrough.
+AI helped by writing the code and styling the site from my prompt, but I had to guide it with updates. The first version was just a plain reaction tester. I wanted to give it a scenario, so I proposed an F1 start: five lights go on one by one before a race, then go out, and the player must click as fast as possible. The game shows their reaction time and their chance of winning the race. With that concept, we could build the game. In total I made two versions, and I think Codex achieved it very well.
